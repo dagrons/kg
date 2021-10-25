@@ -5,11 +5,11 @@
 const Koa = require("koa");
 const cors = require("koa2-cors"); // plugin for cors
 
-const neo4j_host = "localhost"; // neo4j server host
-const neo4j_port = "7687";
+const neo4j_host = process.env.NEO4J_HOST || "localhost"; // neo4j server host
+const neo4j_port = process.env.NEO4J_PORT || "7687";
 const listen_port = "3000";
-const username = "neo4j";
-const password = "daxiahyh";
+const username = process.env.NEO4J_USERNAME || "neo4j";
+const password = process.env.NEO4J_PASSWORD || "daxiahyh";
 
 // a Koa App
 const app = new Koa();
