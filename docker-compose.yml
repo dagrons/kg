@@ -8,7 +8,7 @@ services:
     ports:
       - 3000:3000
     environment:
-      NEO4J_HOST: localhost
-      NEO4J_PORT: 7687
+      NEO4J_HOST: 10.112.154.160
+      NEO4J_PORT: 7688
       NEO4J_USERNAME: neo4j
       NEO4J_PASSWORD: daxiahyh
